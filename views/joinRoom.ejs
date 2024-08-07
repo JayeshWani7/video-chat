@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header header--form">
+      <h1>Join a Room</h1>
+    </div>
+    <div class="main main--form">
+      <div class="form-container">
+        <h2>Enter Room Details</h2>
+        <form action="/join" method="post">
+          <label for="roomId">Enter Room ID:</label>
+          <input type="text" id="roomId" name="roomId" required />
+          <label for="password">Enter Room Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Join Room</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

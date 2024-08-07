@@ -8,6 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +47,45 @@
   align-items: center;
   padding: 1rem;
   background-color: var(--main-dark);
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--main-dark); /* Optional: Set a background color */
+  font-family: "Poppins", sans-serif; /* Ensure this font is imported */
+}
+
+.landing-container {
+  text-align: center;
+}
+
+.landing-container h1 {
+  color: var(--main-light);
+  margin-bottom: 2rem;
+}
+
+.landing-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--main-light);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.centered-container h1 {
+  margin: 0; /* Remove default margins */
+  text-align: center;
+}
+
+.landing-button:hover {
+  background-color: #1d2635; /* Optional: Change background color on hover */
 }
 
 video {
@@ -123,6 +163,7 @@ video {
 }
 
 .messages {
+  color: #000000;
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
@@ -134,7 +175,6 @@ video {
 }
 
 .message > b {
-  color: #eeeeee;
   display: flex;
   align-items: center;
   text-transform: capitalize;
@@ -187,5 +227,161 @@ video {
 
   #showChat {
     display: flex;
+  }
+}
+
+a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--main-light);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--main-darklg);
+}
+
+.container {
+  justify-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--main-light);
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--main-light);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1d2635; /* Optional: Change background color on hover */
+}
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Root Variables */
+:root {
+  --main-darklg: #1d2635;
+  --main-dark: #161d29;
+  --primary-color: #2f80ec;
+  --main-light: #eeeeee;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General Styles */
+body {
+  background-color: var(--main-dark);
+  color: var(--main-light);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header for Form Page */
+.header--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  position: relative;
+  width: 100%;
+  background-color: var(--main-darklg);
+}
+
+.header--form > .logo > h3 {
+  color: var(--main-light);
+  font-size: 1.8rem;
+}
+
+/* Main Container for Form Page */
+.main--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+  padding: 1rem;
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: var(--main-dark);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--main-light);
+  font-size: 1.6rem;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--main-light);
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 96%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--main-light);
+  color: var(--main-dark);
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.8rem;
+  
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--main-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: var(--main-darklg);
+}
+
+/* Responsive Styles for Form Page */
+@media (max-width: 700px) {
+  .header--form {
+    height: 10vh;
+  }
+
+  .header--form > .logo > h3 {
+    font-size: 1.5rem;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="password"],
+  .form-container button {
+    font-size: 1rem;
   }
 }

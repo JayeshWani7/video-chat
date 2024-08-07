@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header header--form">
+      <div class="logo">
+        <h3>Create Room</h3>
+      </div>
+    </div>
+    <div class="main main--form">
+      <div class="form-container">
+        <h2>Create a Video Chat Room</h2>
+        <form action="/create" method="POST">
+          <label for="password">Room Password:</label>
+          <input type="password" id="password" name="password" required />
+          <label for="studentEmails">Student Email:</label>
+          <input type="text" id="studentEmails" name="studentEmails" required />
+          <button type="submit">Create Room</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
